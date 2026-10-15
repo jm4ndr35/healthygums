@@ -1,0 +1,192 @@
+<!-- CHECKOUT SECTION -->
+<section class="checkout" id="checkout">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>{{ section.settings.title | escape }}</h2>
+            <p>{{ section.settings.subtitle | escape }}</p>
+        </div>
+        <div class="checkout-container">
+            <div class="checkout-form reveal">
+                <h3>📦 Información de Envío</h3>
+                <form id="checkout-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="+57 300 123 4567">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección de envío *</label>
+                        <input type="text" id="direccion" name="direccion" required
+                            placeholder="Calle, número, apartamento">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad *</label>
+                            <input type="text" id="ciudad" name="ciudad" required placeholder="Tu ciudad">
+                        </div>
+                        <div class="form-group">
+                            <label for="departamento">Departamento *</label>
+                            <select id="departamento" name="departamento" required>
+                                <option value="">Selecciona...</option>
+                                <option value="amazonas">Amazonas</option>
+                                <option value="antioquia">Antioquia</option>
+                                <option value="arauca">Arauca</option>
+                                <option value="atlantico">Atlántico</option>
+                                <option value="bogota">Bogotá D.C.</option>
+                                <option value="bolivar">Bolívar</option>
+                                <option value="boyaca">Boyacá</option>
+                                <option value="caldas">Caldas</option>
+                                <option value="caqueta">Caquetá</option>
+                                <option value="casanare">Casanare</option>
+                                <option value="cauca">Cauca</option>
+                                <option value="cesar">Cesar</option>
+                                <option value="choco">Chocó</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="cundinamarca">Cundinamarca</option>
+                                <option value="guainia">Guainía</option>
+                                <option value="guaviare">Guaviare</option>
+                                <option value="huila">Huila</option>
+                                <option value="guajira">La Guajira</option>
+                                <option value="magdalena">Magdalena</option>
+                                <option value="meta">Meta</option>
+                                <option value="narino">Nariño</option>
+                                <option value="norte-santander">Norte de Santander</option>
+                                <option value="putumayo">Putumayo</option>
+                                <option value="quindio">Quindío</option>
+                                <option value="risaralda">Risaralda</option>
+                                <option value="san-andres">San Andrés y Providencia</option>
+                                <option value="santander">Santander</option>
+                                <option value="sucre">Sucre</option>
+                                <option value="tolima">Tolima</option>
+                                <option value="valle">Valle del Cauca</option>
+                                <option value="vaupes">Vaupés</option>
+                                <option value="vichada">Vichada</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 30px;">💳 Método de Pago</h3>
+                    <div class="payment-methods">
+                        <div class="payment-method active" data-method="card">
+                            <div class="pm-icon">💳</div>
+                            <div class="pm-label">Tarjeta</div>
+                        </div>
+                        <div class="payment-method" data-method="nequi">
+                            <div class="pm-icon">📱</div>
+                            <div class="pm-label">Nequi</div>
+                        </div>
+                        <div class="payment-method" data-method="daviplata">
+                            <div class="pm-icon">📲</div>
+                            <div class="pm-label">Daviplata</div>
+                        </div>
+                        <div class="payment-method" data-method="transfer">
+                            <div class="pm-icon">🏦</div>
+                            <div class="pm-label">PSE</div>
+                        </div>
+                        <div class="payment-method" data-method="efectivo">
+                            <div class="pm-icon">💵</div>
+                            <div class="pm-label">Efecty</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-large btn-block btn-pulse" id="checkout-btn">
+                        ✅ Pagar Ahora — <span id="checkout-total">$0</span> COP
+                    </button>
+                </form>
+            </div>
+            <div class="checkout-summary reveal">
+                <h3>📋 Tu Pedido</h3>
+                <div id="cart-items">
+                    <div class="empty-cart">
+                        <span class="empty-cart-icon">🛒</span>
+                        <p>Tu carrito está vacío</p>
+                        <a href="#productos" class="btn btn-secondary">Ver Productos</a>
+                    </div>
+                </div>
+                <div id="cart-totals" class="hidden">
+                    <div class="summary-divider"></div>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Envío</span>
+                        <span class="text-success">GRATIS 🎉</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>TOTAL</span>
+                        <span id="total-price">$0 COP</span>
+                    </div>
+                </div>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <span class="icon">🔒</span>
+                        <span>Pago Seguro</span>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-badge">
+                            <span class="icon">✓</span>
+                            <span>Garantía 30 días</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="icon">🚚</span>
+                        <span>Envío Gratis</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="icon">📞</span>
+                        <span>Soporte 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Checkout",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Checkout Header"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Finaliza tu Compra 🛒"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Pago seguro y envío gratis a toda Colombia"
+    },
+    {
+      "type": "range",
+      "id": "stock_count",
+      "label": "Stock Count (for urgency banner)",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "default": 23,
+      "info": "Number of units shown in inventory urgency banner"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Checkout"
+    }
+  ]
+}
+{% endschema %}

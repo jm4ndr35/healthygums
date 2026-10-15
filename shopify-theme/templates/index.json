@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "marquee-superior": {
+      "type": "marquee-superior"
+    },
+    "benefits-bar": {
+      "type": "benefits-bar"
+    },
+    "hero": {
+      "type": "hero"
+    },
+    "quiz": {
+      "type": "quiz"
+    },
+    "products-grid": {
+      "type": "products-grid"
+    },
+    "testimonials": {
+      "type": "testimonials"
+    },
+    "cinta-roja": {
+      "type": "cinta-roja"
+    },
+    "checkout": {
+      "type": "checkout",
+      "settings": {
+        "title": "Finaliza tu Compra",
+        "subtitle": "Pago seguro y envío gratis a toda Colombia"
+      }
+    },
+    "faq": {
+      "type": "faq"
+    }
+  },
+  "order": [
+    "marquee-superior",
+    "benefits-bar",
+    "hero",
+    "quiz",
+    "products-grid",
+    "testimonials",
+    "cinta-roja",
+    "checkout",
+    "faq"
+  ]
+}

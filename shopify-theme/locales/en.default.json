@@ -1,0 +1,37 @@
+{
+  "translation": {
+    "theme_name": "Gomas Saludables",
+    "general": {
+      "continue_shopping": "Continue shopping",
+      "view_cart": "View cart"
+    },
+    "hero": {
+      "subtitle": "Choose from 13 functional flavors, build your ritual and receive your gummies with free shipping to all of Colombia."
+    },
+    "products": {
+      "badge_more_sold": "Best Seller",
+      "badge_natural": "Natural",
+      "badge_relaxing": "Relaxing",
+      "badge_premium": "Premium",
+      "badge_favorite": "Favorite",
+      "badge_digestive": "Digestion",
+      "badge_vitality": "Vitality",
+      "badge_activation": "Activate your day",
+      "badge_calm": "Calm",
+      "fruit": "Fruit",
+      "daily_ritual": "Daily ritual"
+    },
+    "checkout": {
+      "shipping_info": "Shipping Information",
+      "payment_methods": "Payment Method",
+      "pay_now": "Pay Now"
+    },
+    "faq": {
+      "question_1": "Are there contraindications?",
+      "question_2": "How long until I see results?",
+      "question_3": "How long does each jar last?",
+      "question_4": "Do they have INVIMA registration?",
+      "question_5": "What are the payment methods?"
+    }
+  }
+}

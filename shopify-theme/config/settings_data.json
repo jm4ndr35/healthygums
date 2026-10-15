@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "marquee-superior": {
+      "type": "marquee-superior",
+      "settings": {}
+    },
+    "benefits-bar": {
+      "type": "benefits-bar",
+      "settings": {}
+    },
+    "hero": {
+      "type": "hero",
+      "settings": {}
+    },
+    "quiz": {
+      "type": "quiz",
+      "settings": {}
+    },
+    "products-grid": {
+      "type": "products-grid",
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    },
+    "cinta-roja": {
+      "type": "cinta-roja",
+      "settings": {}
+    },
+    "checkout": {
+      "type": "checkout",
+      "settings": {
+        "stock_count": 23
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
+    }
+  },
+  "presets": {
+    "theme": "Gomas Saludables",
+    "description": "Tienda de gomitas saludables premium"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "translation": {
+    "theme_name": "Gomas Saludables",
+    "general": {
+      "continue_shopping": "Continuar comprando",
+      "view_cart": "Ver carrito"
+    },
+    "hero": {
+      "subtitle": "Elige entre 13 sabores funcionales, arma tu ritual y recibe tus gomitas con envío gratis a toda Colombia."
+    },
+    "products": {
+      "badge_more_sold": "Más Vendido",
+      "badge_natural": "Natural",
+      "badge_relaxing": "Relajante",
+      "badge_premium": "Premium",
+      "badge_favorite": "Favorita",
+      "badge_digestive": "Digestión",
+      "badge_vitality": "Vitalidad",
+      "badge_activation": "Activa tu día",
+      "badge_calm": "Calmante",
+      "fruit": "Frutal",
+      "daily_ritual": "Ritual diario"
+    },
+    "checkout": {
+      "shipping_info": "Información de Envío",
+      "payment_methods": "Método de Pago",
+      "pay_now": "Pagar Ahora"
+    },
+    "faq": {
+      "question_1": "¿Las gomitas tienen contraindicaciones?",
+      "question_2": "¿En cuánto tiempo veo resultados?",
+      "question_3": "¿Cuánto dura cada tarro?",
+      "question_4": "¿Tienen registro INVIMA?",
+      "question_5": "¿Cuáles son los métodos de pago?"
+    }
+  }
+}

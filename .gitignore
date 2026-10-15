@@ -1,0 +1,15 @@
+.claude/
+agent/
+images_x/
+mod/
+shopify-apps/
+shopify-automation/
+shopify-development/
+__pycache__/
+*.pyc
+*.log
+combos.txt
+red_social.txt
+create_products.py
+deploy-theme.sh
+skill_.json

@@ -1,0 +1,34 @@
+<!-- INTERACTIVE QUIZ / INTEREST -->
+<section class="quiz-section" id="encuentra-tu-goma">
+    <div class="container">
+        <div class="quiz-card reveal">
+            <div class="quiz-copy">
+                <span class="eyebrow">✨ Encuentra tu match</span>
+                <h2>¿Qué quieres potenciar hoy?</h2>
+                <p>Elige una opción y te mostramos una recomendación en segundos.</p>
+            </div>
+            <div class="quiz-options" role="group" aria-label="Elige tu objetivo">
+                <button class="quiz-option" data-recommend="JOOI Colágeno">
+                    <span>✨</span><strong>Brillar</strong><small>Piel y cabello</small>
+                </button>
+                <button class="quiz-option" data-recommend="Gummy Plen">
+                    <span>🌙</span><strong>Descansar</strong><small>Rutina nocturna</small>
+                </button>
+                <button class="quiz-option" data-recommend="Gommy Plus">
+                    <span>🌿</span><strong>Sentirme ligero</strong><small>Bienestar diario</small>
+                </button>
+                <button class="quiz-option" data-recommend="Gomas Har Booxter">
+                    <span>💪</span><strong>Recargarme</strong><small>Vitamina y energía</small>
+                </button>
+            </div>
+            <div class="quiz-result" id="quiz-result" aria-live="polite"></div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Quiz Interactivo",
+  "settings": []
+}
+{% endschema %}
